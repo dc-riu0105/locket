@@ -8,7 +8,7 @@ var ua = $request.headers["User-Agent"] || $request.headers["user-agent"] || "";
 var obj = JSON.parse($response.body);
 
 if (ua.includes("Locket")) {
-    obj.Attention = "Chúc mừng bạn! Locket gold đã active!";
+    obj.Attention = "Chúc mừng bạn!";
     obj.entries = obj.entries || {};
 
     // ============================================================
@@ -50,7 +50,7 @@ if (ua.includes("Locket")) {
             tag: "LOCKET GOLD",
             tag_gradient: true,
             tag_style: "gold_gradient",
-            title: "Congratulations!!!",
+            title: "chúc mừng bạn ",
             feature_set: [
                 {
                     title: "✨✨✨✨✨",
