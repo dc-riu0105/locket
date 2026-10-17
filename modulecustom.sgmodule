@@ -14,5 +14,5 @@ pattern=^https?:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/usatalk/locket/main/deleteHeader.js, timeout=60
 
 # 3. Kích hoạt Gold & Ngày kích hoạt (by ductri)
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/dc-riu0105/locket/refs/heads/main/locketsub.js, requires-body=true, max-size=-1, timeout=60
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/usatalk/locket/main/locket_sub.js, requires-body=true, max-size=-1, timeout=60
 
